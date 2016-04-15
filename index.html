@@ -1,0 +1,425 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tercera Aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/app3.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--Grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/contaminacion12.jpg','imagenes/contaminacinonambiental.jpg','imagenes/contaminacionsuelo.jpg','imagenes/contaminacionaire.jpg','imagenes/quemabasurapue.jpg','imagenes/aguasnegras.jpg','imagenes/callessucias.jpg')">
+<div data-role="page" id="Principal" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+   <h1>CONTAMINACION</h1>
+  </div>
+ <div data-role="main" class="ui-content">
+   <div>
+     
+   <div>
+     <img src="imagenes/contaminacion.jpg" width="100%" height="100%"></div>
+    </div>
+  </div>
+    
+   <div>
+    <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+     <li class="ui-first-child ui-last-child">
+       <a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+         <h2>¿Qué es la contaminacion? </h2>
+         <p>Muestra la informacion sobre la contaminacion</p>
+      </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>Causas sobre la contaminacion</h2>
+       <p>Muestra la informacion sobre la contaminacion</p>
+      </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>Consecuencias sobre la contaminacion</h2>
+       <p>Muestra la informacion sobre la contaminacion</p>
+      </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>Tipos de contaminacion</h2>
+       <p>Muestra la informacion tipos de contaminacion</p>
+      </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>Contaminacion en mi comunidad</h2>
+       <p>Muestra la informacion de la contaminacion en mi comunidad</p>
+      </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>Tipos de contaminacion en mi comunidad</h2>
+       <p>Muestra la informacion de los tipos de contaminacion en mi comunidad</p>
+      </a>
+     </li>
+     <li class="ui-first-child ui-last-child">
+      <a href="#Pagina7" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>Cosas que debemos realizar para cuidar el medio ambiente</h2>
+       <p>Muestra la informacion sobre el medio ambiente</p>
+      </a>
+     </li>
+      <li class="ui-first-child ui-last-child">
+      <a href="#Pagina8" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+       <h2>Visor de imagenes</h2>
+       <p>Muestra las imagenes</p>
+      </a>
+     </li>
+   </ul>
+   </div>
+   <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+      <div>
+        <img src="imagenes/persona_rosa.png" width="46" height="46">
+      </div>
+      <div>
+       <h4>Aplicacion Tres</h4>
+       <h4>Diana Linares Uscanga</h4>
+      </div>
+  </div>
+</div> 
+      
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+     <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+     <h1>¿Qué es la contaminacion?</h1>
+     </div>
+   <div data-role="content" align="center">
+    <div>
+     <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('imagen98','','imagenes/contaminacinonambiental.jpg',1)"><img src="imagenes/contaminacionambiental.jpg" width="518" height="408" id="imagen98"></a>
+ <p>La contaminación es la introducción de sustancias en un medio que provocan que este sea inseguro o no apto para su uso. El medio puede ser un ecosistema, un medio físico o un ser vivo. El contaminante puede ser una sustancia química, energía (como sonido, calor, luz o radiactividad). Es siempre una alteración negativa del estado natural del medio, y por lo general, se genera como consecuencia de la actividad humana considerándose una forma de impacto ambiental.
+     </p>
+<div data-role="main" class="ui-content">
+   <div data-role="collapsible" data-content-theme="false">
+     <h1>Clic para mas informacion</h1>
+
+<br>
+<p>Alrededor de 2 millones de personas podrían morir cada año por alguna causa atribuible a la contaminación atmosférica, asegura la Organización Mundial de la Salud. Según este estudio la mayor cantidad de muertes se producen en los países en desarrollo donde se concentran  altas densidades de partículas nocivas para la salud.
+La población humana crece según una progresión geométrica y la demanda de alimentos y necesidades básicas para la vida del hombre son cada vez mayores. El aumento en el consumo de diversos productos y desechos, provocados por  el ser humano, trae como consecuencia la generación de sustancias tóxicas.
+
+Los grupos más vulnerables frente a la contaminación son: niños, mujeres embarazadas, personas con afecciones respiratorias y ancianos con enfermedades crónicas. Otro sector de la población con un alto riesgo de padecer los efectos causados por la contaminación atmosférica son los que trabajan al exterior o en lugares donde se está más expuesto a emisiones de contaminantes, como calles llenas de tráfico vehicular o determinadas industrias.
+</p>
+Este desarrollo indiscriminado ha alterado la Tierra:
+ <br>
+<p>Regiones enteras en zonas tropicales han sufrido la desertificación.</p>
+<center><img src="imagenes/medioambiente.jpg" width="504" height="504"></center>
+ <br>
+<p>Extinción de especies animales y vegetales.</p>
+ <center><img src="imagenes/medioambiente2.jpg" width="504" height="504"></center>
+ <br>
+<p>Graves inundaciones que arruinan cada año las cosechas de las zonas más pobres del planeta.</p>
+ <center><img src="imagenes/medioambiente3.jpg" width="504" height="504"></center>
+ <br>
+   </div>
+   </div>
+    </div>
+   </div>
+   <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+      <div>
+        <img src="imagenes/persona_rosa.png" width="46" height="46">
+      </div>
+      <div>
+       <h4>Aplicacion Tres</h4>
+       <h4>Diana Linares Uscanga</h4>
+      </div>
+  </div>
+</div> 
+  
+    
+  <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a"> 
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>Causas de la contaminacion</h1>
+  </div>
+  <div data-role="content" align="center">
+  <div>
+  <div data-role="main" class="ui-content">
+  <div data-role="collapsible" data-content-theme="false">
+  <h1>Dar clic para mas informacion</h1>
+  <p><center><img src="imagenes/causascontaminacinon.jpg" width="504" height="504"></center>
+     CAUSAS
+      <br>
+      Desechos sólidos domésticos, Desechos sólidos industriales, Exceso de fertilizante y productos químicos, Tala, Quema, Basura, El monóxido de carbono de los vehículos, Desagües de aguas negras o contaminadas al mar o ríos.
+      <br>
+La deforestación: la tala indiscriminada en bosques y selvas impide que los árboles, encargados de purificar el aire, realicen esta tarea y que miles de animales y plantas se extingan por no tener un lugar donde vivir y crecer.
+<br>
+Los pesticidas y los productos químicos utilizados en los cultivos llegan a  contaminar el suelo y el agua de la zona en que se sembró. Llegando incluso a contaminar, de forma alarmante, a muchos alimentos.
+ 
+  <br>
+  
+  Muchas de las causas del deterioro ambiental es debido a : la sobreexplotación , destrucción del hábitat , la contaminación , la erosión y la deforestacion . Estudios realizados dicen que el deterioro del medio ambiente provoca el 21% de los problemas de salud que sufre la población mundial.
+  </p>
+    </div>
+     
+    </div>
+    </div>
+    </div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+      <div>
+        <img src="imagenes/persona_rosa.png" width="46" height="46">
+      </div>
+      <div>
+       <h4>Aplicacion Tres</h4>
+       <h4>Diana Linares Uscanga</h4>
+      </div>
+  </div>
+</div>
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+    <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+    <h1>Consecuencias de la contaminacion</h1>
+    </div>
+    <div data-role="content" align="center">
+     <div>
+       <div data-role="main" class="ui-content">
+   <div data-role="collapsible" data-content-theme="false">
+     <h1>Clic para mas informacion</h1>
+ <p><center><img src="imagenes/medioambiente3.jpg" width="504" height="504"></center>
+      CONSECUENCIAS
+      <br>
+    La contaminación ambiental deteriora cada vez mas a nuestro planeta y a nosotros mismos pues según investigaciones al respirar el aire contaminado esto afecta nuestra salud cardiovascular
+    por lo que normas estrictas de aire limpio contribuirían a una mejor salud con efectos en gran escala. 
+    Otra consecuencia es el debilitamiento de la capa de ozono, que protege a los seres vivos de la radiación ultravioleta del Sol, debido a la destrucción del ozono estratosférico y esto provoca el  calentamiento global.La contaminacion al medio atenta contra la vida de plantas, animales y personas, genera daños físicos en los individuos, convierte en un elemento no consumible al agua
+    y hace que en los suelos contaminados no sea posible la siembra. Esto afecta  a demás el clima y las actividades realizadas por el ser humano dañandolo y perjudicándole.
+    </p>
+        </div>
+       </div>
+      </div>
+  </div>
+     <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+      <div>
+        <img src="imagenes/persona_rosa.png" width="46" height="46">
+      </div>
+      <div>
+       <h4>Aplicacion Tres</h4>
+       <h4>Diana Linares Uscanga</h4>
+      </div>
+  </div>
+</div> 
+
+      
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+         <h1>Tipos de contaminacion</h1>
+        </div>
+        <div data-role="content" align="center">
+          <div>
+          <div data-role="main" class="ui-content">
+   <div data-role="collapsible" data-content-theme="false">
+     <h1>Clic para mas informacion</h1>
+     
+     <center><img src="imagenes/tiposdecontaminacion.jpg" width="504" height="504"></center>
+       
+<p>CONTAMINACIÓN DEL SUELO
+
+El suelo es un constituyente normal de la Naturaleza, con componentes minerales y orgánicos y con componentes biológicos constituidos por organismos que viven en él.
+La contaminación del suelo: es la incorporación al suelo de materias extrañas, como basura, desechos tóxicos, productos químicos, y desechos industriales, este tipo de contaminación produce un desequilibrio físico, químico y biológico que afecta negativamente las plantas, animales y humanos.
+El uso de abonos, la sedimentación de contaminantes atmosféricos de origen industrial, los vertidos industriales y los depósitos y escombreras producen alteraciones en los suelos difícilmente cuantificables, sobre las que es problemática la previsión de efectos.
+</p>
+       <br>
+       <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('imagen94','','imagenes/contaminacionsuelo.jpg',1)"><img src="imagenes/tiposconta.jpg" width="825" height="650" id="imagen94"></a>
+<p>CONTAMINACION DEL AIRE
+  
+  El aire limpio está compuesto principalmente por nitrógeno y oxígeno, en pequeñas proporciones se puede encontrar vapor de agua y dióxido de carbono. La contaminación del aire, proviene de la adición de sustancias emitidas a la atmósfera que causan un desequilibrio en la composición original. El aire contaminado contiene gases, polvos, olores y humos en grandes cantidades que dañan la salud de las personas, animales y plantas. Existen dos tipos de contaminantes:
+  
+  Los que son arrojados directamente a la atmósfera como resultado de un proceso de combustión se llaman contaminantes primarios, estos son: dióxido de azufre, monóxido de carbono, vapores de combustibles y partículas suspendidas.
+  Una vez en el aire, algunos contaminantes primarios reaccionan con otros compuestos y forman contaminantes de igual o mayor toxicidad, estos se denominan contaminantes secundarios.
+  La contaminación daña de diferente manera la salud de los individuos dependiendo de su nivel de exposición a los contaminantes, de su capacidad y de su resistencia física.
+  
+  - Una de rechazo a través de tos o estornudos.
+  - A través de la presencia de diversos síntomas o de enfermedades específicas.
+</p>
+  <br>
+  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('imagen78','','imagenes/contaminacionaire.jpg',1)"><img src="imagenes/portada.jpg" width="500" height="334" id="imagen78"></a>
+<p>CONTAMINACIÓN DEL AGUA.
+  
+  La contaminación del agua se produce a través de la introducción directa o indirecta en los acuíferos o cauces de agua de diversas sustancias que pueden ser consideradas como contaminantes.
+  Se pueden definir tres tipos de contaminación del agua:En el ambiente laboral e industrial el agua contaminada puede producir daños de salud a los trabajadores, las vías de penetración del agua contaminada en el ser humano son:
+  
+  CONSECUENCIAS DE LA CONTAMINACIÓN DEL AGUA
+  Como sabemos, la contaminación del agua no sólo afecta a los propios humanos en sí, sino a la fauna y a los diferentes seres vivos que pueden vivir en la misma. Eso sin contar que el agua contaminada puede ser portadora de una gran variedad de enfermedades, algunas de ellas mortales.
+</p>
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('imagen3','','imagenes/contaminacion12.jpg',1)"><img src="imagenes/consecuencias.jpg" width="593" height="397" id="imagen3"></a> </div>
+          </div> 
+        </div> 
+      </div>
+     <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+      <div>
+        <img src="imagenes/persona_rosa.png" width="46" height="46">
+      </div>
+      <div>
+       <h4>Aplicacion Tres</h4>
+       <h4>Diana Linares Uscanga</h4>
+      </div>
+  </div>
+</div> 
+       
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+         <h1>Contaminacion en mi comunidad</h1>
+        </div>
+        <div data-role="content" align="center">
+        <div>
+         <p>La contaminación en mi comunidad de San Felix Hidalgo es un problema que nos afecta a todos a causa de tirar basura en los lugares públicos, quemar basura al aire libre, los desechos tóxicos, entre otras cosas mas que afecta a nuestra salud.
+         </p>
+         <div data-role="main" class="ui-content">
+   <div data-role="collapsible" data-content-theme="false">
+     <h1>Clic para mas informacion</h1>
+         <br>
+         <h1>Como reducir la contaminacion en mi localidad</h1> 
+         <center><img src="imagenes/contapue2.jpg" width="504" height="504"></center>
+        <p> Contaminación de la basura: Para reducir la contaminación en la comunidad la mejor forma que tenemos respecto a los residuos generados por nuestra basura consiste en reciclar todos los envases , si no tenemos cerca contenedores para poder hacerlo podemos ir a nuestro ayuntamiento para pedir que nos lo pongan.
+        </p>
+         <br>
+         <center><img src="imagenes/contagua.jpg" width="504" height="504"></center>
+          <p>Contaminación del agua: Si no disponemos de un lavavajillas la manera más eficiente de lavar los platos consiste en mojar todos los platos cerrar el agua a continuación enjabonar bien con  productos que sean biodegradables para no contaminar, una vez enjabonados los enjuagaremos y cerraremos el grifo.
+           </p>
+           <br>
+            <center><img src="imagenes/contaire.jpg" width="504" height="504"></center>
+          <p>Contaminación del aire: Usando el transporte publico reduciremos la contaminación o el uso de vehículos que no generen residuos tales como la bicicleta .
+El tabaco mucha gente se quedará sorprendida por lo que están leyendo pero el tabaco a parte de no ser bueno para nuestra salud , contamina el aire que respiramos .
+Muchos de los productos que usamos diariamente contaminan el aire, ya sea productos para el pelo en forma de lacas o productos químicos de limpieza. Cambiar estos productos por otros más adecuados y reduciremos la contaminación de la comunidad.
+           </p>
+           <br>
+           <center><img src="imagenes/pocailumi.jpg" width="504" height="504"></center>
+           <p>Iluminación adecuada: Al instalar más fuentes de luz de las necesarias estamos aumentando el consumo eléctrico por lo tanto generamos más residuos para obtener la electricidad . Para reducir este tipo de contaminación e nuestra comunidad deberemos cambiar las fuentes de luz poco eficientes por otras con un mejor diseño y eficiencia.
+           </p>
+         </div>
+         </div>
+         </div>
+         </div>
+        <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+      <div>
+        <img src="imagenes/persona_rosa.png" width="46" height="46">
+      </div>
+      <div>
+       <h4>Aplicacion Tres</h4>
+       <h4>Diana Linares Uscanga</h4>
+      </div>
+  </div>
+</div> 
+           
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+         <h1>Tipos de contaminacion en mi comunidad</h1>
+        </div>
+        <div data-role="content" align="center">
+          <div>
+          <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('image87','','imagenes/aguasnegras.jpg',1)"><img src="imagenes/contagua.jpg" width="820" height="538" id="image87"></a>
+<p>Contaminación del agua: cuando se incorpora al agua a productos químicos, residuos industriales o aguas residuales. Estos contaminantes hacen que el agua no sea beneficiosa para el ser humano ni para la vida vegetal y animal.
+  <br>
+  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('image','','imagenes/quemabasurapue.jpg',1)"><img src="imagenes/contaire.jpg" width="500" height="281" id="image"></a>
+<p>Contaminación del aire: lo cual la mayoria de la gente quema basura y eso se denomina a la adición de elementos tóxicos como el CO. Este tipo de contaminación afecta al bienestar de las personas, animales y plantas de forma negativa.</p>
+<br>  
+<a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('imagen42','','imagenes/callessucias.jpg',1)"><img src="imagenes/suelo.jpg" width="644" height="484" id="imagen42"></a>
+<p>Contaminación del suelo: esto es producido por la mayoria de la personas lo cual no barren las calles o cuando se introduce fertilizantes para el campo. Estos contaminantes producen un desequilibrio físico, químico y biológico en el suelo lo cual nosotros mismos lo estamos probocando.
+</p>
+        </div> 
+      </div>
+      <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+      <div>
+        <img src="imagenes/persona_rosa.png" width="46" height="46">
+      </div>
+      <div>
+       <h4>Aplicacion Tres</h4>
+       <h4>Diana Linares Uscanga</h4>
+      </div>
+  </div>
+</div> 
+       
+<div data-role="page" id="Pagina7" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+         <h1>Cosas que debemos realizar para cuidar el medio ambiente</h1>
+        </div>
+        <div data-role="content" align="center">
+          <div>
+          <br>
+          <center><img src="imagenes/transporte1.jpg" width="504" height="504"></center>
+           <p>Usar el transporte público: Solo en la mayoría de los trayectos urbanos, como llevar a los niños a la escuela  o puedes optar por comprarte un coche eléctrico o usar la bicicleta.
+       <br>
+<center><img src="imagenes/luz.jpg" width="504" height="504"></center>
+<p> Apagar  la luz: Las habitaciones que no se estén utilizan deberían permanecer a oscuras. Esto permite ahorrarnos dinero y reducir nuestra huella de carbono. 
+</p>
+<br>  
+<center><img src="imagenes/reciclar.jpg" width="504" height="504"></center>
+<p>Reciclar: El reciclaje es una de las maneras más fáciles de combatir el Calentamiento Global, ya que evitamos generar mayor contaminación. Por culpa del plástico estamos creadas verdaderas islas de basura en los océanos. Por lo tanto es aconsejable adquirir el hábito de separar el plástico, el metal, el vidrio, el papel, y las pilas. 
+</p>
+<br>
+<center><img src="imagenes/termostato.jpg" width="504" height="504"></center>
+<p>El Termostato: El consumo energético disminuye hasta un 5% si bajamos un sólo grado el termostato de la calefacción ajusta la calefacción a una temperatura razonable. 
+</p>
+<br>
+<center><img src="imagenes/arbol.jpg" width="504" height="504"></center>
+<p>Plantar árboles en su jardín y la comunidad: Todo el mundo sabe que la plantación de árboles puede ayudar al medio ambiente. Los árboles enfrían tu casa, lo que reduce la energía utilizada para la refrigeración. Los árboles mejoran la salud mental, etc. 
+</p> 
+
+        </div> 
+      </div>
+      <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+      <div>
+        <img src="imagenes/persona_rosa.png" width="46" height="46">
+      </div>
+      <div>
+       <h4>Aplicacion Tres</h4>
+       <h4>Diana Linares Uscanga</h4>
+      </div>
+  </div>
+</div> 
+<div data-role="page" id="Pagina8" data-add-back-btn="true" data-theme="a">
+        <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+         <h1>Visor de imagenes</h1>
+        </div>
+        <div data-role="content" align="center">
+          <div>
+<!-- Start WOWSlider.com -->
+<iframe src="visor/indexwow.html" style="width:320px;height:243px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+   </div>
+   
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+      <div>
+        <img src="imagenes/persona_rosa.png" width="46" height="46">
+      </div>
+      <div>
+       <h4>Aplicacion Tres</h4>
+       <h4>Diana Linares Uscanga</h4>
+      </div>
+  </div>
+</div> </div>     
+</div>
+</div>         
+</body>
+</html>
